@@ -27,12 +27,7 @@ dee22d5e4a7b1e3c409ea0719aa0a715 underexpose_test_click-6
 69416eedf810b56f8a01439e2061e26d underexpose_test_click-7  
 55588c1cddab2fa5c63abe5c4bf020e5 underexpose_test_click-8  
 caacb2c58d01757f018d6b9fee0c8095 underexpose_test_click-9 
-``` 
-## 模型图
-![训练集 qtime 构造方式](fig/data_construct.png)
-![整体流程图](fig/structure.png)
-![深度模型1结构图](fig/nn1.png)
-![深度模型2结构图](fig/nn2.png)
+```
 
 ## 代码说明  
 > data.ipynb 数据合并；线下验证集构造   
@@ -43,8 +38,14 @@ caacb2c58d01757f018d6b9fee0c8095 underexpose_test_click-9
 > recall_v5.ipynb 改进itemCF(provided by 天才儿童)  
 > recall_v6.ipynb item2vec(provided by [snsxf](https://github.com/snsxf))  
 > recall.ipynb 合并各路召回；删除召回未命中用户  
-> rank_feature 排序阶段特征工程  
+> rank_feature.ipynb 排序阶段特征工程  
 > kdd_Lstm_sort.ipynb 深度模型1((provided by [BuzzLightYear](https://github.com/yzh1994414))  
 > nn_data.ipynb 构造深度模型2输入  
 > nn_tiancai.py 深度模型2(provided by 天才儿童)  
 > rank_model.ipynb LGB模型预测后处理输出  
+
+## 模型图
+![训练集 qtime 构造方式](fig/data_construct.png)
+![整体流程图](fig/structure.png)
+![深度模型1结构图](fig/nn1.png)
+![深度模型2结构图](fig/nn2.png)
